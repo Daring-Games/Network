@@ -1,0 +1,355 @@
+<!-------------------------------------------------------------
+!=  WebPage created on 11th of October 2020 by Sameer Karna  =!
+------------- WEBPAGE FOR INFO ABOUT WAN NETWORK --------------
+________This webpage is a part of the website 'NETWORK'________
+
+-==-==-==-==-==-==-== Copyright (c) 2020 ==-==-==-==-==-==-==-
+== This webpage and its contents are a subject to copyright ==
+Any means to copy this code or webpage and its contents will be
+dealt severly.
+-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=-
+-->
+
+
+
+    <!DOCTYPE html>
+
+        <!-- HTML tag -->
+            <html>
+
+                <!-- Head -->
+                    <head>
+
+                        <!-- title -->
+                            <title>
+                                WAN
+                            </title>
+                    </head>
+
+                <!-- link to icon library / css -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- CSS -->
+                    <style>
+
+                        /* Styling body */
+                            body {
+                                background-image: url('images/main_page_bg.png');
+                                background-size: cover;
+                                background-attachment: scroll;
+                                margin-right: 1cm;
+                                margin-left: 1cm;
+                                margin-bottom: 5cm;
+                            }
+
+                        /* Styling heading - 1 */
+                            h1 {
+                                text-align: center;
+                                font-size: 50px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over heading - 1 */
+                            h1:hover {
+                                transform: scale(1.5, 1.5);
+                            }
+
+                        /* Loading font families */
+                            @font-face {
+                                font-family: Ultimate_FONT;
+                                src: url('fonts/Networld-3zRwp.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPREME_FONT;
+                                src: url('fonts/DleDigitalRegular-62Vo.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPERBA;
+                                src: url('fonts/JosefinSlab-SemiBold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: ultimatum_XTREME;
+                                src: url('fonts/BlackOpsOne-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SIERRA;
+                                src: url('fonts/BigShouldersInlineDisplay-Bold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SANS;
+                                src: url('fonts/OpenSans-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: platinum;
+                                src: url('fonts/JosefinSans-Regular.ttf');
+                            }
+
+                        /* Styling HR */
+                            hr {
+                                border-color: #9c9b9b;
+                                border: 2px solid #9c9b9b;
+                                background-color: #9c9b9b;
+                                margin-left: 0cm;
+                                margin-right: 0cm;
+                                width: 100%;
+                            }
+
+                        /* Styling image */
+                            img {
+                                display: block;
+                                margin-right: auto;
+                                margin-left: auto;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over image */
+                            img:hover {
+                                transform: scale(1.3, 1.3);
+                            }
+
+                        /* Styling another image */
+                            .style_Image {
+                                border-radius: 18px 37px;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over */
+                            .style_Image:hover {
+                                transform: scale(1.2, 1.2);
+                            }
+
+                        /* Class anim */
+                            .anim:hover {
+                                transform: matrix(1.3, 0, 0, 1.3, 0, 90);
+                            }
+
+                        /* Styling heading - 2 */
+                            h2 {
+                                font-size: 30px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* Class style */
+                            .style1:hover {
+                                color: rgb(31, 197, 31);
+                                transform: translateX(20px);;
+                            }
+
+                            .style2:hover {
+                                color: red;
+                                transform: translateX(20px);
+                            }
+
+                        /* Class animateBIG */
+                            .animateBIG:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0)
+                            }
+                        
+                        /* Styling button */
+                            .button {
+                                background-color: #504f4f;
+                                padding: 10px 10px 8px 8px;
+                                border: 2px solid #504f4f;
+                                color: aliceblue;
+                                font-family: ultimatum_XTREME;
+                                font-size: 30px;
+                                transition: 500ms;
+                                background-image: url('images/sign1.png');
+                                float: left;
+                                cursor: pointer;
+                                margin-top: 1cm;
+                                margin-bottom: 5cm;
+                            }
+
+                        /* If mouse is over button */
+                            .button:hover {
+                                transform: matrix(1.5, 0.3, 0, 1, 1, 0);
+                                content: '\00bb';
+                                background-color: #777777;
+                                border: 2px solid #777777;
+                            }
+
+                        /* class animate */
+                            .animate:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0);
+                                color: rgb(11, 177, 122);
+                            }
+                        
+                        /* Styling lists */
+                            li {
+                                color: rgb(102, 70, 70); line-height: 1.5;font-size: 30px; margin-bottom: 1cm;margin-top: 0.5cm; margin-right: 1%;  font-family: SUPERBA
+                            }
+
+                        /* Class for HR */
+                            .set_margin {
+                                margin-top: 5cm;
+                            }
+                    </style>
+
+                <!-- Body tag -->
+                    <body>
+
+                        <!-- heading - 1 -->
+                            <h1>
+                                WAN
+                            </h1>
+
+                        <!-- horizontal line -->
+                            <hr>
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 27px; margin-bottom: 1cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SUPERBA">
+                                WAN's full form is Wide Area Network. This is the network that extends over a large geographical area ranging from more 
+                                that 100km. This network has the primary purpose of computer networking. Since, people all over the world rely on data 
+                                from various locations of the world. Internet can also be considered as a WAN.
+                            </p>
+
+                        <!-- image -->
+                            <img class="style_Image" src="images/internet.jpg" width="700">
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 27px; margin-bottom: 1cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SUPERBA">
+                                This network is not tied up to a single location. This network is the most largest network to date. The customers can use this
+                                network no matter where they are but as long as they have WAN. Access to WAN is granted by different links such as VPN (Virtual 
+                                Private Network). Without this network, organisations wouldn't exist as they wouldn't be able to grow. 
+                            </p>
+
+                        <!-- heading - 2 -->
+                            <h2 class="style1" style="font-size: 40px;">
+                                ADVANTAGES
+                            </h2>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms; line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">More Privacy</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                In WAN, we can share our personal data to our own websites without sharing it to the internet. If we encrypt our data 
+                                before sending, by WAN. It adds an extra layer of protection. So, it is impossible to hack.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Updation</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Wan network provides us with the ability to get updated files and data from the server. If the server is updated then 
+                                all connected devices are also updated.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Sharing Data</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Like PAN and LAN, in this network,  we can share our data tp other users via internet.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">High Bandwidth</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Since WAN covers a large geographical area ranging from 100km to more than 1000km, it has a very high bandwidth as compared to
+                                other networks.
+                            </p>
+
+                        <!-- heading - 2 -->
+                            <h2 class="style2" style="font-size: 40px;">
+                                DISADVANTAGES
+                            </h2>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS;">Expensive</p>
+                            
+                        <!-- paragraph -->  
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Since WAN covers a large area at a geographical extent, it is very expensive at its initial state because it involves 
+                                purchasing of different networking devices, i.e. routers, switches  and extra security software.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Maintainence Issues</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Once MAN network is set up, maintaining it is a full time job which requires high tech skills of network supervisors &
+                                technicians.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Troubleshooting Problems</p>
+                            
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                A WAN network has many problems in fixing it. Most of the WAN wires go into the sea and if those are broken, it involves a lot
+                                of hard work to fix those lines under the sea.
+                            </p>
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 30px; margin-bottom: 1cm;margin-top: 4cm; margin-right: 1%;  font-family: SUPERBA">
+                                An example of WAN is the <b>Core Router</b>. <br>
+                                This router resides within the backbone of the WAN. This router has the ability to forward IP packates at full speedon all interfaces.
+                                This also gives the WAN network its speed.
+                            </p>
+
+                        <!-- image -->
+                            <img class="anim" src="images/router.jpg" style="width: 800px; border-radius: 50px 15px; margin-top: 3cm; margin-bottom: 5cm;">
+
+                        <!-- button to "TYPES OF NETWORK" page -->
+                            <a href="index2.html"><button class="button" ><i class="fa fa-angle-double-left"></i> BACK</button></a>
+
+                        <!-- HR -->
+                            <div class="set_margin">
+                                <hr>
+                            </div>
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 18px; margin-bottom: 1%; margin-top: 1cm; margin-right: 1%; margin-left:  1%; text-align: center ;font-family: SANS">
+                                <b><i>Copyright © 2020 Network, All rights reserved</i></b>
+                                <br>
+                                <b>Research From:</b>
+                                <br>
+                                Wikipedia.org
+                                <br>
+                                Orbit-computers-solutions.com
+                                <br>
+                                Computernetworktopology.com
+                                <br>
+                                rfwireless-world.com
+                                <br>
+                                purple.ai
+                                <br>
+                                comptia.org
+                                <br>
+                                hitechwizz.com
+                                <br>
+                                nibusinessinfo.co.uk
+                                <br>
+                                searchmobilecomputing.techtarget.com
+                                <br>
+                            </p>
+                    </body>
+            </html>
+            
+
+
+<!-----------------------------------------------------------------------------------
+-==-===-==-===-==-===-==-===-==-===-==- HTML END -===-==-===-==-===-==-===-==-===-==-
+------------------------------------------------------------------------------------>

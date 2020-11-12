@@ -1,0 +1,416 @@
+<!-------------------------------------------------------------
+!=  WebPage created on 11th of October 2020 by Sameer Karna  =!
+------------- WEBPAGE FOR INFO ABOUT LAN NETWORK --------------
+________This webpage is a part of the website 'NETWORK'________
+
+-==-==-==-==-==-==-== Copyright (c) 2020 ==-==-==-==-==-==-==-
+== This webpage and its contents are a subject to copyright ==
+Any means to copy this code or webpage and its contents will be
+dealt severly.
+-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=-
+-->
+
+
+    <!DOCTYPE html>
+
+        <!-- Html Tag to start HTML coding -->
+            <html>
+
+                <!-- Head which is used for title -->
+                    <head>
+
+                        <!-- Title of the Webpage -->
+                            <title>
+                                LAN
+                            </title>
+                    </head>
+
+                <!-- Links to stylesheets, icon libraries etc.-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Javascript -->
+                    <script src="scripts/libraries/three.js"></script>
+                    <script src="scripts/libraries/three.min.js"></script>
+                    <script src="scripts/libraries/OrbitControls.js"></script>
+                    <script src="scripts/libraries/GLTFLoader.js"></script>
+
+                <!-- CSS to style the webpage -->
+                    <style>
+
+                        /* Styling Javascipt WebGL Canvas */
+                            canvas {
+                                display: block;
+                                margin-right: auto;
+                                margin-left: auto;
+                                margin-top: 5%;
+                                margin-bottom: 5%;
+                                cursor: all-scroll;
+                                border-radius: 20px;
+                                border: 4px solid #818181;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over the canvas */
+                            canvas:hover {
+                                box-shadow: 6px 6px 10px #a1a1a1, -6px 6px 10px #a1a1a1;
+                            }
+
+                        /* Styling the Webpage Body */
+                            body {
+                                background-image: url('images/main_page_bg.png');
+                                background-size: cover;
+                                background-attachment: scroll;
+                                margin-right: 1cm;
+                                margin-left: 1cm;
+                                margin-bottom: 1cm;
+                            }
+
+                        /* Styling the Heading - 1 of the Webpage */
+                            h1 {
+                                text-align: center;
+                                font-size: 50px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* If mmouse is over Heading - 1 */
+                            h1:hover {
+                                transform: scale(1.5, 1.5);
+                            }
+
+                        /* Loading Font Families */
+                            @font-face {
+                                font-family: Ultimate_FONT;
+                                src: url('fonts/Networld-3zRwp.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPREME_FONT;
+                                src: url('fonts/DleDigitalRegular-62Vo.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPERBA;
+                                src: url('fonts/JosefinSlab-SemiBold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: ultimatum_XTREME;
+                                src: url('fonts/BlackOpsOne-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SIERRA;
+                                src: url('fonts/BigShouldersInlineDisplay-Bold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SANS;
+                                src: url('fonts/OpenSans-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: platinum;
+                                src: url('fonts/JosefinSans-Regular.ttf');
+                            }
+
+                        /* Styling Horizantal Line which is used to divide the content */
+                            hr {
+                                border-color: #9c9b9b;
+                                border: 2px solid #9c9b9b;
+                                background-color: #9c9b9b;
+                                margin-left: 0cm;
+                                margin-right: 0cm;
+                                width: 100%;
+                            }
+
+                        /* Styling Image */
+                            img {
+                                display: block;
+                                margin-right: auto;
+                                margin-left: auto;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over Image */
+                            img:hover {
+                                transform: scale(1.3, 1.3);
+                            }
+
+                        /* Styling Heading - 2 of the Webpage */
+                            h2 {
+                                font-size: 30px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* Class of name style - 1 and if mouse is over it */
+                            .style1:hover {
+                                color: rgb(31, 197, 31);
+                                transform: translateX(20px);;
+                            }
+
+                        /* If mouse is over style - 2 class */
+                            .style2:hover {
+                                color: red;
+                                transform: translateX(20px);
+                            }
+
+                        /* Class animateBig for transitions and if mouse is over it */
+                            .animateBIG:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0)
+                            }
+
+                        /* Styling buttons for webpage */
+                            .button {
+                                background-color: #504f4f;
+                                padding: 10px 10px 8px 8px;
+                                border: 2px solid #504f4f;
+                                color: aliceblue;
+                                font-family: ultimatum_XTREME;
+                                font-size: 30px;
+                                transition: 500ms;
+                                background-image: url('images/sign1.png');
+                                float: left;
+                                cursor: pointer;
+                                margin-top: 1cm;
+                                margin-bottom: 5cm;
+                            }
+
+                        /* If mouse is over the button */
+                            .button:hover {
+                                transform: matrix(1.5, 0.3, 0, 1, 1, 0);
+                                content: '\00bb';
+                                background-color: #777777;
+                                border: 2px solid #777777;
+                            }
+
+                        /* Class 'animate' for transition and if mouse is over it */
+                            .animate:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0)
+                            }
+
+                        /* Styling lists */
+                            li {
+                                color: rgb(102, 70, 70); line-height: 1.5;font-size: 30px; margin-bottom: 1cm;margin-top: 0.5cm; margin-right: 1%;  font-family: SUPERBA
+                            }
+
+                        /* Styling links */
+                            a {
+                                color:rgb(31, 197, 31);
+                                transition: 500ms; 
+                            }
+
+                        /* If mouse is over a link */
+                            a:hover {
+                                color: pink;
+                            }
+
+                        /* Class 'set_margin' for horizontal line */
+                            .set_margin {
+                                margin-top: 5cm;
+                            }
+
+                        /* To make the content unselectable */
+                            .unselectable {
+                                -webkit-user-select: none;
+                                -webkit-touch-callout: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                    </style>
+                    
+
+                <!-- Body tag which contains all the things necessary in the webPage -->
+                    <body>
+
+                        <!-- unselectable -->
+                            <div class="unselectable">
+
+                                <!-- Heading - 1 -->
+                                    <h1>
+                                        LAN
+                                    </h1>
+
+                                <!-- Horizontal Line to divide the content -->
+                                    <hr>
+
+                                <!-- Paragraph of the Webpage -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 27px; margin-bottom: 1cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SUPERBA">
+                                        LAN's full form is <b>Local Area Network</b>. it connects computers within a limited area, such as in a campus, school, residence
+                                        etc. A LAN may be large or small. It can extend from one user to thousands of users. 
+                                    </p>
+
+                                <!-- Adding image to the WebPage -->
+                                    <img src = "images/LAN.png" width = "500">
+
+                                <!-- Paragraph of the WebPage -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 27px; margin-bottom: 1cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SUPERBA">
+                                        Comparing with WAN though, WAN or Wide Are Network (see WAN), has more range than LAN, and MAN or Metropolitan Area Network
+                                        (see <a href="index_man.html">MAN</a>) covers a network range for a whole city.
+                                    </p>
+
+                                <!-- Heading - 2 -->
+                                    <h2 class = "style1" style = "font-size: 40px;">
+                                        ADVANTAGES
+                                    </h2>
+
+                                <!-- Paragraph of the WebPage -->
+                                    <p class = "animateBIG" style = "transition: 500ms; line-height: 1.5; font-size: 32px; margin-bottom: 0.4cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SANS">
+                                        Sharing Resources
+                                    </p>
+
+                                <!-- Paragraph of the WePage -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 25px; margin-bottom: 1cm; margin-top: 0.3cm; margin-right: 1%; margin-left: 3%; font-family: SUPERBA">
+                                        All the data and the resources are attached to one network and all the other computers atached to that network can access
+                                        that data
+                                    </p>
+
+                                <!-- Paragraph of the WebPage -->
+                                    <p class = "animateBIG" style = "transition: 500ms; line-height: 1.5; font-size: 32px; margin-bottom: 0.4cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SANS">
+                                        Communication Is Easy
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 25px; margin-bottom: 1cm; margin-top: 0.3cm; margin-right: 1%; margin-left: 3%; font-family: SUPERBA">
+                                        In LAN, computers can exchange data very easily and fast. This saves our time and also does not affect a computer's working 
+                                        speed. Every computer user can share messages and data with other user on LAN. The user can log in from any computer and can access
+                                        that data because computers are interconnected by a single network.
+                                    </p>
+
+                                <!-- Heading - 2 -->
+                                    <h2 class = "style2" style = "font-size: 40px;">
+                                        DISADVANTAGES
+                                    </h2>
+
+                                <!-- Paragraph -->
+                                    <p class = "animateBIG" style="transition: 500ms; line-height: 1.5; font-size: 32px; margin-bottom: 0.4cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SANS">
+                                        Security Issues
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 25px; margin-bottom: 1cm; margin-top: 0.3cm; margin-right: 1%; margin-left: 3%; font-family: SUPERBA">
+                                        In LAN, if the server computer is not set up correctly then there is a leak in security and hackers can steal the data. So, we must set
+                                        up the servers correctly and apply security protocols.
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p class = "animateBIG" style="transition: 500ms; line-height: 1.5; font-size: 32px; margin-bottom: 0.4cm; margin-top: 1cm; margin-right: 1%; margin-left: 1%; font-family: SANS">
+                                        Server Crashes Affects All Computers
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 25px; margin-bottom: 1cm; margin-top: 0.3cm; margin-right: 1%; margin-left: 3%; font-family: SUPERBA">
+                                        If there is any file, folder on the server that is corrupted then all computers attached to that server via LAN network 
+                                        face problems.
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 30px; margin-bottom: 1cm; margin-top: 4cm; margin-right: 1%; font-family: SUPERBA">
+                                        The most common device that LAN uses is a router. Router is used in many homes, office spaces etc. 
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 30px; margin-bottom: 1cm; margin-top: 0.5cm; margin-right: 1%; font-family: SUPERBA">
+                                        A <b>3D Model</b> of a <b>Router</b> has been uploaded in the following canvas (the box below). Please do consider it. <br> 
+                                        These are the steps given on how to use the 3D View: <br>
+                                    </p>
+
+                                <!-- Paragrpah -->
+                                    <p class = "animate" style = "font-style: italic; color: rgb(102, 70, 70); line-height: 1.5; font-size: 30px; margin-left: 1%; margin-bottom: 1cm; margin-top: 0.5cm;  margin-right: 1%; font-family: SUPERBA; transition: 500ms">
+                                        1. You can rotate the 3D Model of the router to see its parts. <br>
+                                        2. You can zoom the 3D Model to get a closer look. <br>
+                                        3. The information which is given below will help you understanding a router's parts while viewing a 3D model of a router.
+                                    </p>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 30px; margin-bottom: 1cm; margin-top: 0.5cm; margin-right: 1%; font-family: SUPERBA">
+                                        Do observe the following in the 3D model:
+                                    </p>
+
+                                <!-- Lists -->
+                                    <li>
+                                        This 3D Router will have an antenna. All routers have an antenna, so that they can recieve LAN signal waves
+                                    </li>
+
+                                    <li>
+                                        Rotate this model to see the yellow port at its backside, this is a router's ethernet port. Ethernet cable is used to
+                                        extend network coverage in a certain area. For eg: They can be used to extend your home network.
+                                    </li>
+
+                                    <li>
+                                        Alongside the Ethernet Port, you will be able to see that there are four other ports besides it, they are the WAN & LAN 
+                                        ports. Most routers have 4 WAN ports. LAN ports are used to connect network supply to devices such as a computer. This provides
+                                        it with LAN supply.
+                                    </li>
+                            </div>
+
+                                <!-- Adding Javascript WebGL Scene of a 3D Model to the WebPage -->
+                                    <script src = "scripts/sketches/sketch_for_LAN.js"></script>
+
+                            <div class="unselectable">
+                                <!-- Back button to go back to the "TYPES OF NETWORKS" page -->
+                                    <a href = "index2.html">
+                                        <button class = "button">
+                                            <i class = "fa fa-angle-double-left"></i> 
+                                            BACK
+                                        </button>
+                                    </a>
+
+                                <!-- Adding horizontal line -->
+                                    <div class = "set_margin">
+                                        <hr>
+                                    </div>
+
+                                <!-- Paragraph -->
+                                    <p style = "color: rgb(102, 70, 70); line-height: 1.5; font-size: 18px; margin-bottom: 1%; margin-top: 1cm; margin-right: 1%; margin-left: 1%; text-align: center; font-family: SANS">
+                                        <b>
+                                            <i>
+                                                Copyright © 2020 Network, All rights reserved
+                                            </i>
+                                        </b>
+
+                                        <br>
+
+                                        <b>
+                                            Research From:
+                                        </b>
+                                        
+                                        <br>
+                                        Wikipedia.org
+                                        <br>
+                                        Orbit-computers-solutions.com
+                                        <br>
+                                        Computernetworktopology.com
+                                        <br>
+                                        rfwireless-world.com
+                                        <br>
+                                        purple.ai
+                                        <br>
+                                        comptia.org
+                                        <br>
+                                        hitechwizz.com
+                                        <br>
+                                        nibusinessinfo.co.uk
+                                        <br>
+                                        searchmobilecomputing.techtarget.com
+                                        <br>
+                                    </p>
+                            </div>
+                    </body>
+            </html>
+
+
+
+<!-----------------------------------------------------------------------------------
+-==-===-==-===-==-===-==-===-==-===-==- HTML END -===-==-===-==-===-==-===-==-===-==-
+------------------------------------------------------------------------------------>

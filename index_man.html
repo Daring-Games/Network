@@ -1,0 +1,341 @@
+<!-------------------------------------------------------------
+!=  WebPage created on 11th of October 2020 by Sameer Karna  =!
+------------- WEBPAGE FOR INFO ABOUT MAN NETWORK --------------
+________This webpage is a part of the website 'NETWORK'________
+
+-==-==-==-==-==-==-== Copyright (c) 2020 ==-==-==-==-==-==-==-
+== This webpage and its contents are a subject to copyright ==
+Any means to copy this code or webpage and its contents will be
+dealt severly.
+-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=-
+-->
+
+
+
+    <!DOCTYPE html>
+
+        <!-- HTML Tag -->
+            <html>
+
+                <!-- Head -->
+                    <head>
+
+                        <!-- Title of the WebPage -->
+                            <title>
+                                MAN
+                            </title>
+                    </head>
+
+                <!-- Link to icon library / css -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- CSS -->
+                    <style>
+
+                        /* Styling Body of the Webpage */
+                            body {
+                                background-image: url('images/main_page_bg.png');
+                                background-size: cover;
+                                background-attachment: scroll;
+                                margin-right: 1cm;
+                                margin-left: 1cm;
+                                margin-bottom: 5cm;
+                            }
+
+                        /* Styling Heading - 1 */
+                            h1 {
+                                text-align: center;
+                                font-size: 50px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is oevr heading - 1 */
+                            h1:hover {
+                                transform: scale(1.5, 1.5);
+                            }
+
+                        /* Loading fonts */
+                            @font-face {
+                                font-family: Ultimate_FONT;
+                                src: url('fonts/Networld-3zRwp.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPREME_FONT;
+                                src: url('fonts/DleDigitalRegular-62Vo.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SUPERBA;
+                                src: url('fonts/JosefinSlab-SemiBold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: ultimatum_XTREME;
+                                src: url('fonts/BlackOpsOne-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SIERRA;
+                                src: url('fonts/BigShouldersInlineDisplay-Bold.ttf');
+                            }
+
+                            @font-face {
+                                font-family: SANS;
+                                src: url('fonts/OpenSans-Regular.ttf');
+                            }
+
+                            @font-face {
+                                font-family: platinum;
+                                src: url('fonts/JosefinSans-Regular.ttf');
+                            }
+
+                        /* Styling HR */
+                            hr {
+                                border-color: #9c9b9b;
+                                border: 2px solid #9c9b9b;
+                                background-color: #9c9b9b;
+                                margin-left: 0cm;
+                                margin-right: 0cm;
+                                width: 100%;
+                            }
+
+                        /* Styling image */
+                            img {
+                                display: block;
+                                margin-right: auto;
+                                margin-left: auto;
+                                transition: 500ms;
+                            }
+
+                        /* If mouse is over image */
+                            img:hover {
+                                transform: scale(1.3, 1.3);
+                            }
+
+                        /* Class "ANIM" and if mouse is over anim */
+                            .anim:hover {
+                                transform: matrix(1.3, 0, 0, 1.3, 0, 90);
+                            }
+
+                        /* Styling heading - 2 */
+                            h2 {
+                                font-size: 30px;
+                                color: rgb(50, 72, 92);
+                                font-family: SUPREME_FONT;
+                                font-style: normal;
+                                margin-top: 2cm;
+                                transition: 500ms;
+                            }
+
+                        /* Style - 1 */
+                            .style1:hover {
+                                color: rgb(31, 197, 31);
+                                transform: translateX(20px);;
+                            }
+
+                        /* Style 2 */
+                            .style2:hover {
+                                color: red;
+                                transform: translateX(20px);
+                            }
+
+                        /* Class animate-big */
+                            .animateBIG:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0)
+                            }
+
+                        /* Styling button */
+                            .button {
+                                background-color: #504f4f;
+                                padding: 10px 10px 8px 8px;
+                                border: 2px solid #504f4f;
+                                color: aliceblue;
+                                font-family: ultimatum_XTREME;
+                                font-size: 30px;
+                                transition: 500ms;
+                                background-image: url('images/sign1.png');
+                                float: left;
+                                cursor: pointer;
+                                margin-top: 1cm;
+                                margin-bottom: 5cm;
+                            }
+
+                        /* If mouse is  over button */
+                            .button:hover {
+                                transform: matrix(1.5, 0.3, 0, 1, 1, 0);
+                                content: '\00bb';
+                                background-color: #777777;
+                                border: 2px solid #777777;
+                            }
+
+                        /* Class animate */
+                            .animate:hover {
+                                position: relative;
+                                transform: matrix(1.2, 0, 0, 1.2, 150, 0)
+                            }
+
+                        /* Styling lists */
+                            li {
+                                color: rgb(102, 70, 70); line-height: 1.5;font-size: 30px; margin-bottom: 1cm;margin-top: 0.5cm; margin-right: 1%;  font-family: SUPERBA
+                            }
+
+                        /* Styling links */
+                            a {
+                                color:rgb(31, 197, 31);
+                                transition: 500ms; 
+                            }
+
+                        /* If mouse is over link */
+                            a:hover {
+                                color: pink;
+                            }
+
+                        /* Class for HR */
+                            .set_margin {
+                                margin-top: 5cm;
+                            }
+                    </style>
+
+                <!-- Body tag -->
+                    <body>
+
+                        <!-- Heading - 1 -->
+                            <h1>
+                                MAN
+                            </h1>
+
+                        <!-- horizontal line -->
+                            <hr>
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 27px; margin-bottom: 1cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SUPERBA">
+                                MAN's full form is Metropolitan Area Network. it is a computer network that interconnects users with computer data / resources
+                                in a large area like a city / metropolis. This type of network covers a larger area than LAN and has a range of 5 to 50 kilometres
+                            </p>
+
+                        <!-- Image -->
+                            <img src="images/MAN_network.png" width="800">
+
+                        <!-- paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 27px; margin-bottom: 1cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SUPERBA">
+                                This type of network resides in the same or different cities. It mostly serves as an ISP (Internet Service Provider). This type
+                                of computer network is designed for customers who need a high speed connectivity. Speed of MAN is in MBPS(Mega Bytes Per Second), making
+                                it faster. The network coverage in this type of network depends on the configuration.
+                            </p>
+
+                        <!-- Heading - 2 -->
+                            <h2 class="style1" style="font-size: 40px;">
+                                ADVANTAGES
+                            </h2>
+
+                        <!-- Paragraph -->
+                            <p class="animateBIG" style="transition: 500ms; line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">
+                                It Is Less Expensive
+                            </p>
+
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                It is less expensive to attach MAN as compared with WAN (Wide Area Network); see <a href="index_wan.html">WAN</a>. 
+                            </p>
+
+                        <!-- Paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">
+                                High Speed
+                            </p>
+
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                MAN network uses high fibre optic cables, which helps in transferring or recieving data from one device to another at a very fast 
+                                rate.
+                            </p>
+
+                        <!-- Paragraph-->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Internet Sharing</p>
+                        
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                            If we use MAN, we can share internet connections with other people / users. By this way, since the spped of MAN is high,
+                            MAN users get very high speed even if they are working in the same shared network.
+                            </p>
+
+                        <!-- Heading - 2 -->
+                            <h2 class="style2" style="font-size: 40px;">
+                                DISADVANTAGES
+                            </h2>
+
+                        <!-- Paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Wire Requirement</p>
+                        
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Comparing to LAN and WAN, MAN requires additional wires for operations. This is due to connections of any teo LAN networks.
+                                When there is more need of wires, then the overall installation cost will increase.
+                            </p>
+
+                        <!-- Paragraph -->
+                            <p class="animateBIG" style="transition: 500ms;line-height: 1.5;font-size: 32px; margin-bottom: 0.4cm;margin-top: 1cm; margin-right: 1%; margin-left:  1%; font-family: SANS">Dependency On Fiber Optic Cables</p>
+                        
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 25px; margin-bottom: 1cm;margin-top: 0.3cm; margin-right: 1%; margin-left:  3%; font-family: SUPERBA">
+                                Fiber Optic cables are the only element in MAN, which make it popular for its high speed. If MAN is installed without these
+                                cables, then users will experience internet speed problems. This akes it a huge problem as fibre optic cables increase the cost 
+                                of installation.
+                            </p>
+
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 30px; margin-bottom: 1cm;margin-top: 4cm; margin-right: 1%;  font-family: SUPERBA">
+                                The most common example of MAN is Cable TV Network. This is found almost in every home. The TV Cable Dish recieves TV signals via
+                                MAN from which we are able to see Cable TV. These signals come from one place and MAN helps them to send these signals throughout 
+                                the city.
+                            </p>
+
+                        <!-- Image -->
+                            <img class="anim" src="images/cable.jpg" style="width: 800px; border-radius: 15px 50px; margin-top: 3%; margin-bottom: 5cm;">
+
+                        <!-- Link to "DIFFERENT TYPES OF NETWORK" page -->
+                            <a href="index2.html"><button class="button" ><i class="fa fa-angle-double-left"></i> BACK</button></a>
+
+                        <!-- Horizontal line -->
+                            <div class="set_margin">
+                                <hr>
+                            </div>
+
+                        <!-- Paragraph -->
+                            <p style="color: rgb(102, 70, 70); line-height: 1.5;font-size: 18px; margin-bottom: 1%; margin-top: 1cm; margin-right: 1%; margin-left:  1%; text-align: center ;font-family: SANS">
+                                <b><i>Copyright © 2020 Network, All rights reserved</i></b>
+                                <br>
+                                <b>Research From:</b>
+                                <br>
+                                Wikipedia.org
+                                <br>
+                                Orbit-computers-solutions.com
+                                <br>
+                                Computernetworktopology.com
+                                <br>
+                                rfwireless-world.com
+                                <br>
+                                purple.ai
+                                <br>
+                                comptia.org
+                                <br>
+                                hitechwizz.com
+                                <br>
+                                nibusinessinfo.co.uk
+                                <br>
+                                searchmobilecomputing.techtarget.com
+                                <br>
+                            </p>
+                    </body>
+            </html>
+        
+            
+
+<!-----------------------------------------------------------------------------------
+-==-===-==-===-==-===-==-===-==-===-==- HTML END -===-==-===-==-===-==-===-==-===-==-
+------------------------------------------------------------------------------------>
